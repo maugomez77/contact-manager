@@ -25,13 +25,14 @@ Go on the project's root folder, then type:
 ### Add a contact: 
   
     POST http://localhost:8080/contacts/
-    ```json
+    ```javascript
     {
   		"id": 7,
   		"name": "name23213",
   		"email": "email3213",
   		"profession": "profession323"
-	}```
+	}
+	```
 
 ### For the delete method: 
     
