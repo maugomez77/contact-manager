@@ -25,7 +25,7 @@ Go on the project's root folder, then type:
 ### Add a contact: 
   
     POST http://localhost:8080/contacts/
-    ```javascript
+    ```json
     {
   		"id": 7,
   		"name": "name23213",
@@ -44,7 +44,7 @@ Go on the project's root folder, then type:
 	GET http://localhost:8080/contacts/list
 	GET http://localhost:8080/contacts/list?page=0&size=2
 	GET http://localhost:8080/contacts/list?page=0&size=2&
-	```javascript
+	```json
 	[
 	  {
 	    "id": 3,
@@ -69,7 +69,7 @@ Go on the project's root folder, then type:
    
 ### Update a contact
 	PUT http://localhost:8080/contacts/5
-	```javascript
+	```json
 	{
   		"id": 5,
   		"name": "pancho villa 23456789",
@@ -80,7 +80,7 @@ Go on the project's root folder, then type:
 
 ### Search recent 5 contacts added who are unemployed (Should have sorting and pagination support)
 	GET http://localhost:8080/contacts/list-unemployee
-	```javascript
+	```json
 	[
   		{
 	    "id": 4,
