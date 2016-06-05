@@ -20,36 +20,31 @@ Go on the project's root folder, then type:
 
 ### Usage
 
-<p>Use the following urls to invoke controllers methods and see the interactions with the database:</p>
+### Use the following urls to invoke controllers methods and see the interactions with the database:
 
-<ul>  
-    Add a contact: 
+### Add a contact: 
   
     POST http://localhost:8080/contacts/
-    JSON Body
+    ```javascript
     {
   		"id": 7,
   		"name": "name23213",
   		"email": "email3213",
   		"profession": "profession323"
-	}
-</ul>
+	}```
 
-<ul>      
-    For the delete method: 
+### For the delete method: 
     
     DELETE http://localhost:8080/contacts/[id]
     
 	Contact successfully deleted!
 	
-</ul>
-
-<ul>	
-    List the contacts (Should have sorting and pagination support):
+### List the contacts (Should have sorting and pagination support):
 	
 	GET http://localhost:8080/contacts/list
 	GET http://localhost:8080/contacts/list?page=0&size=2
 	GET http://localhost:8080/contacts/list?page=0&size=2&
+	```javascript
 	[
 	  {
 	    "id": 3,
@@ -70,20 +65,22 @@ Go on the project's root folder, then type:
 	    "profession": "profession"
 	  }
 	]
-</ul>
-<ul>		
-	Update a contact
+	```
+   
+### Update a contact
 	PUT http://localhost:8080/contacts/5
+	```javascript
 	{
   		"id": 5,
   		"name": "pancho villa 23456789",
   		"email": "rosama7777@gmail.com",
   		"profession": "employee"
 	}
-</ul>
-<ul>
-	Search recent 5 contacts added who are unemployed (Should have sorting and pagination support)
+	```
+
+### Search recent 5 contacts added who are unemployed (Should have sorting and pagination support)
 	GET http://localhost:8080/contacts/list-unemployee
+	```javascript
 	[
   		{
 	    "id": 4,
@@ -98,5 +95,4 @@ Go on the project's root folder, then type:
 	    "profession": "unemployee"
 	  }
 	]
-</ul>
-	
+	```
