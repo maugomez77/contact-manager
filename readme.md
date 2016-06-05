@@ -25,6 +25,7 @@ Go on the project's root folder, then type:
 ### Add a contact: 
   
     POST http://localhost:8080/contacts/
+    
     ```javascript
     {
   		"id": 7,
